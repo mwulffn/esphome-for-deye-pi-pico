@@ -1,7 +1,9 @@
-# esphome-for-deye
-Made for Deye SUN-12K-SG04LP3.
-I guess it also works for SUN-5/6/8/10/-SG04LP3 as the modbus adresses is most likely the same.
-For other models & sunsync. Edit the modbus adresses and it should work if the adresses exist in your inverter.
+# esphome-for-deye (Pi Pico)
+Made for Deye SUN-12K-SG04LP3 and other compatible inverters such as the SUN-5/6/8/10/-SG04LP3.
+
+This is a fork of Klatremis's esphome setup. This has been adapted for the Raspberry Pi Pico.
+
+The build is based on a common buck converter, a TTL <-> RS485 with flowcontrol and a Pi Pico.
 
 For use with ESP32 & TTL To RS485 Module with automatic flow control.
 I powered the esp32 from CN2 pin 7&8 with 12V into a USB converter.
