@@ -1,4 +1,7 @@
 # esphome-for-deye (Pi Pico)
+
+IMPORTANT: IS NOT YET READY!. DO NOT USE
+
 Made for Deye SUN-12K-SG04LP3 and other compatible inverters such as the SUN-5/6/8/10/-SG04LP3.
 
 This is a fork of Klatremis's esphome setup. This has been adapted for the Raspberry Pi Pico.
