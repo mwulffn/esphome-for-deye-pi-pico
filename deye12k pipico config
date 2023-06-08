@@ -1,15 +1,16 @@
 substitutions:
   name: deye12
-  device_description: "Esphome component for Deye sun-12k-sg04lp3"
+  device_description: "Pi Pico component for Deye sun-12k-sg04lp3"
   modbus_controller_id: sg04lp3
 
 esphome:
   name: ${name}
 
-esp32:
-  board: esp32dev
+rp2040:
+  board: rpipicow
   framework:
-    type: arduino
+    # Required until https://github.com/platformio/platform-raspberrypi/pull/36 is merged
+    platform_version: https://github.com/maxgerhardt/platform-raspberrypi.git
 
 # Enable logging
 logger:
@@ -33,8 +34,8 @@ captive_portal:
 
 uart:
   id: mod_bus
-  tx_pin: 17
-  rx_pin: 16
+  tx_pin: 16
+  rx_pin: 17
   baud_rate: 9600
   stop_bits: 1
  
